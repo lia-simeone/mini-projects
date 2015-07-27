@@ -7,7 +7,7 @@ A graph of user age vs. the proportion of orders placed per week shows a contino
 ![alt text](https://github.com/lia-simeone/mini-projects/blob/master/Blue_Apron/week_index.PNG "Week index")
 Side note: I used the user_fulfillment_history dataset for my modeling, so user age was equal to week index for this data.
 
-At this stage I was fairly confident a model built only on user age would not be predictive but I built a model anyway to use as a reference point. I then built a model using user age and the user history variable I described above and I was above to see a massive improvement.
+At this stage I was fairly confident a model built only on user age would not be predictive but I built a model anyway to use as a reference point. I then built a model using user age and the user history variable I described above and I was able to see a massive improvement. Details about the user history variable and the modeling approach are described below.
 
 ![alt text](https://github.com/lia-simeone/mini-projects/blob/master/Blue_Apron/modeling%20results.png "ROC Curve")
 
@@ -34,4 +34,8 @@ Because of the availability of the was_shipped variable, I only used user_fulfil
 Seasonality data jumped immediately to mind for predicting weekly order volumes. Holiday weekends may see less orders as users travel out of town and for the fish business specifically, I imagine more orders are placed in summer vs. winter. Geographic data could also be interesting. Zip-9 is highly predictive of income which could help separate customers who can afford to become repeated customers vs. those who are just trying the service but won't use it after an initial promotion.
 
 ###Data exploration
-I performed basic exploration of the datasets given. user_fulfillment_history had 10 weeks of data for all users with no missings. weekly_user_population had duplicates, so I removed those (although I didn't end up using this dataset), 
+I performed basic exploration of the datasets given. user_fulfillment_history had 10 weeks of data for all users with no missings. weekly_user_population had duplicates, so I removed those (although I didn't end up using this dataset).
+
+###Explaination of files
+data_exploration contains some basic steps to read and examine the data format
+modeling_clean contains all of the modeling code and the logic to create my user history variable
