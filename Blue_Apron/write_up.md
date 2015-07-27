@@ -3,8 +3,11 @@ Raw user age is not a strong predictor of whether a user place an order in the u
 
 ###Modeling details
 ####Results
+text here
+![alt text](https://github.com/lia-simeone/mini-projects/blob/master/Blue_Apron/modeling%20results.png "ROC Curve")
 
-![alt text](https://github.com/lia-simeone/mini-projects/blob/master/Blue_Apron/modeling%20results.png "Logo Title Text 1")
+text here
+![alt text](https://github.com/lia-simeone/mini-projects/blob/master/Blue_Apron/week_index.PNG "ROC Curve")
 
 #####Selected method
 I used decision trees as my primarily modeling tool. I made this choice because I only had 1-2 input variables, one of which had only 10 possible outcomes, so more sophisticated modeling tools seemed like overkill. I did try a gradient boosting model, but as expected, it had identifical performance to the decision tree. For the models with my user history variable, I split  user_fulfillment_history into an 80/20 test and train.
